@@ -87,7 +87,6 @@ class Neuron(object):
         self.gsca = params['gsca']
         self.gbar_kca = params['g_KCa']
         self.ifca = params['ifca']
-        print self.ifca
 
         self.na_vshift = params['ifshift'] 
         self.ais_vshift = 10
@@ -118,7 +117,6 @@ class Neuron(object):
         self.set_kap_parameters(gkapbar = self.gk_kap, Ekap = self.ek)
 
         if self.ifca == True:
-            print "ca"
             self.set_ca_parameters(gsca = self.gsca, git2 = self.git2, 
             gkca = self.gbar_kca, eca = self.eca)
 

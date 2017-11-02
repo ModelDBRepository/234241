@@ -695,7 +695,9 @@ grec.record(exnc[0]._ref_weight[1])
 h.dt = DT
 h.celsius = 30
 h.finitialize(-70)
+print('simulation is running')
 neuron.run(total_time)
+print("simulation is finished\nfigures will show up one after the other\nclose one to see the next")
 
 
 # In[11]:
